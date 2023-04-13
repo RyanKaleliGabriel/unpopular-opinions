@@ -1,0 +1,42 @@
+﻿body {
+    background-color: #A4BC92;
+    color: darkslategray;
+}
+.register {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #B3C99C;
+}
+.parent-container{
+    float:left;
+}
+.form-field{
+    padding: 10px;
+    margin-top:15px;
+}
+.heading{
+    margin-left: 25px
+}
+.input {
+    border: 1px solid #C7E9B0;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 70%;
+}
+.btn-register {
+    border: 1px solid #C7E9B0;
+    border-radius: 10px;
+    width: 70%;
+    color: grey;
+    background-color: #245953;
+    padding: 0.5rem;
+}
+.par-reg {
+    margin-left: 15px;
+}
+.login-href{
+    color:darkslategray;
+}
