@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signin.aspx.cs" Inherits="unpopular.signin" %>
+﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signin.aspx.cs" Inherits="unpopular.signin" %>
 
 <!DOCTYPE html>
 
@@ -20,7 +20,7 @@
             <asp:TextBox ID="passwd" runat="server" placeholder="••••••••••••" CssClass="input"></asp:TextBox>
          </div>
         <div class="form-field">
-            <asp:Button ID="register" runat="server" Text="Sign In" CssClass="btn-register" />
+            <asp:Button ID="login" runat="server" Text="Sign In" CssClass="btn-register" OnClick="login_Click" />
         </div>
     </form>
             <p class="par-reg">Don't have an account? <a href="signup.aspx" class="login-href">Sign Up</a></p>

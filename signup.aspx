@@ -29,7 +29,7 @@
             <asp:TextBox ID="passwd" runat="server" placeholder="••••••••••••" CssClass="input"></asp:TextBox>
          </div>
         <div class="form-field">
-            <asp:Button ID="register" runat="server" Text="Sign Up" CssClass="btn-register" />
+            <asp:Button ID="register" runat="server" Text="Sign Up" CssClass="btn-register" OnClick="register_Click" />
         </div>
     </form>
             <p class="par-reg">Already Have an account? <a href="signin.aspx" class="login-href">Sign in</a></p>

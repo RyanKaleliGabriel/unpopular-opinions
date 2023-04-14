@@ -13,5 +13,29 @@ namespace unpopular
         {
 
         }
+
+        protected void register_Click(object sender, EventArgs e)
+        {
+            database.dbconnection();
+        }
+
+        protected void login_Click(object sender, EventArgs e)
+        {
+            string username = uname.Text;
+            string password = passwd.Text;
+
+            string checkUsername = "SELECT COUNT (*) FROM tblUsers WHERE Username = '" + username + "'";
+            string checkPassword = "SELECT COUNT (*) FROM tblUsers WHERE Password = '" + password + "'";
+
+            if(checkUsername.Length > 0 && checkPassword.Length>0) 
+            {
+                Response.Redirect("Home.html");
+            }
+            else 
+            {
+                Response.Redirect("signup.aspx");
+            }
+
+        }
     }
 }
