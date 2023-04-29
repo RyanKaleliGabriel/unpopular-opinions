@@ -23,8 +23,9 @@ namespace unpopular
             string password = passwd.Text;
             string emailad = email.Text;
 
-            string checkEmail = "SELECT COUNT (*) FROM tblUsers WHERE Email = '"+emailad+"'";
-            if(checkEmail.Length > 0 )
+            string checkUsernameEmail = "SELECT COUNT (*) FROM tblUsers WHERE Username = '" + username + "' AND Email = '"+emailad+"' ";
+            
+            if(checkUsernameEmail.Length == 1 )
             {
                 Response.Redirect("signin.aspx");
                 Response.Write("Email already exists. Sign in");
@@ -36,16 +37,9 @@ namespace unpopular
                 cmd.CommandText = sqlText;
                 cmd.Connection = database.con;
                 cmd.ExecuteNonQuery();
-                Response.Redirect("Home.html");
+                Response.Redirect("Home.aspx");
 
             }
-           
-
-
-
-           
-
-
           
         }
     }

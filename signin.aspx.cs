@@ -24,10 +24,10 @@ namespace unpopular
             string username = uname.Text;
             string password = passwd.Text;
 
-            string checkUsername = "SELECT COUNT (*) FROM tblUsers WHERE Username = '" + username + "'";
-            string checkPassword = "SELECT COUNT (*) FROM tblUsers WHERE Password = '" + password + "'";
+            string checkUsernamePass = "SELECT COUNT (*) FROM tblUsers WHERE Username = '" + username + "' AND Password = '" + password + "' ";
+            
 
-            if(checkUsername.Length > 0 && checkPassword.Length>0) 
+            if(checkUsernamePass.Length == 1) 
             {
                 Response.Redirect("Home.html");
             }
